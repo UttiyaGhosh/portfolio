@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../shared/header.ejs')%>
+</head>
+
+<body>
+    <%- include('../shared/navbar.ejs')%>
+
+    <div class="container-fluid">
+        <% publications.forEach(publication => { %> 
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-10">  
+                    <h3 class="publication-title">
+                        <a  href="/files/CiteVis_PrePrint.pdf" target="_blank">
+                            <%=publication.title%>
+                        </a>
+                    </h3>
+                    <p class="publication-details"> <%=publication.conference%> 
+                        &nbsp; &bull; &nbsp;<%=publication.date%>
+                        &nbsp; &bull; &nbsp;<%=publication.authors%>
+                    </p>
+                    <p class="publication-abstract-text">
+                        Abstract:
+                    </p>
+                    <p class="publication-abstract">
+                        <%=publication.abstract%>
+                    </p>
+                    <p class="publication-cite">
+                        <b> To Cite:</b>
+                        <%=publication.citation%>
+                    </p>
+                    <p class="publication-icon-para">
+                        <% if (publication.prePrintUrl) {%>
+                            &nbsp; &nbsp;
+                            <a href=<%=publication.prePrintUrl%> target="_blank">
+                                <i class="fas fa-file-pdf"> Pre Print Version</i>
+                            </a>
+                             &nbsp; &nbsp;
+                        <%}%>
+                        <% if (publication.doiUrl) {%>
+                            &nbsp; &nbsp;
+                            <a href=<%=publication.doiUrl%> target="_blank">
+                                <i class="fas fa-passport doi-icon"> Doi</i>
+                            </a>
+                            &nbsp; &nbsp;
+                        <%}%>
+                        <% if (publication.demoUrl) {%>
+                            &nbsp; &nbsp;
+                            <a href=<%=publication.demoUrl%> target="_blank">
+                                <i class="fas fa-video"> Demo</i>
+                            </a>
+                            &nbsp; &nbsp;
+                        <%}%>
+                    </p>
+                    <hr class="publication-hr">
+                </div>   
+            </div>
+        <%})%>
+        
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
