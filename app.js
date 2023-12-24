@@ -6,6 +6,7 @@ const app= express()
 const port = process.env.PORT
 
 app.set("view engine","ejs")
+app.set("views","./views")
 app.use('/images',express.static('./assets/images'));
 app.use('/css',express.static('./assets/styles'));
 app.use('/files',express.static('./assets/files'));
