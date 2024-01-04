@@ -1,57 +1,20 @@
 pipeline {
     agent any
 
-    environment {
-        NODEJS_HOME = tool 'NodeJS'
-        PATH = "${env.NODEJS_HOME}/bin:${env.PATH}"
-    }
-
     stages {
         stage('Checkout') {
             steps {
-                script {
-                    checkout scm
-                }
+                checkout scm
             }
         }
 
-        stage('Build') {
+        stage('Build Docker Image') {
             steps {
                 script {
-                    // Install dependencies and build
-                    sh 'npm install'
-                    sh 'npm run build'
+                    sh 'docker build -t my-node-app .'
                 }
             }
         }
 
-        stage('Test') {
-            steps {
-                script {
-                    // Run tests
-                    sh 'npm test'
-                }
-            }
-        }
-
-        stage('Deploy') {
-            when {
-                expression { currentBuild.resultIsBetterOrEqualTo('SUCCESS') }
-            }
-            steps {
-                script {
-                    // Your deployment steps go here
-                }
-            }
-        }
-    }
-
-    post {
-        success {
-            echo 'Build successful! You can deploy now.'
-        }
-        failure {
-            echo 'Build failed. Please check the logs and fix any issues.'
-        }
     }
 }
