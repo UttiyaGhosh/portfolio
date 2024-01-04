@@ -14,11 +14,11 @@ body {
     height: 40px;
 }
 
-.navbar-nav .nav-item a{
+.navbar-nav .nav-item .nav-link{
     color: var(--heading-color);
 }
 
-.navbar-nav .nav-item.active a{
+.navbar-nav .nav-item.active .nav-link{
     color: var(--text-color);
 }
 
