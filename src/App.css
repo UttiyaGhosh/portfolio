@@ -1,0 +1,175 @@
+:root {
+  --heading-color: #28A745;
+  --text-color: #B39651;
+  --sub-text-color: #0073B1;
+}
+
+/* Navigation */
+.nav-logo{
+  height: 40px;
+}
+
+.navbar-nav .nav-item .nav-link{
+  color: var(--heading-color);
+}
+
+.navbar-nav .nav-item.active .nav-link{
+  color: var(--text-color);
+}
+
+/* 404 */
+.notFound-heading{
+  margin-top: 7%;
+  font-size: 10vw;
+  text-align: center;
+}
+
+.notFound-text{
+  font-size: 2.5vw;
+  text-align: center;
+}
+
+.notFound-btn{
+  margin-left: 46%;
+  font-size: 1.5vw;
+}
+
+/* Home */
+.home-container{
+  margin-top: 10%;
+}
+
+.home-heading{
+  color: var(--heading-color);
+  margin-bottom: 5%;
+}
+
+.home-about{
+  color: var(--text-color);
+  margin-bottom: 5%;
+}
+
+.anime-img{
+  width: 80%;
+}
+
+.icon-para{
+  width:50%
+}
+
+.icon-linkedIn{
+  color: #0073B1;
+}
+
+.icon-github{
+  color: white;
+}
+
+.icon-gmail{
+  color: #0073B1;
+}
+
+.icon-google-scholar{
+  height: 32px;
+}
+
+/* Publications */
+
+.publication-title{
+  margin-top: 2%;
+  
+}
+
+.publication-title a{
+  color: var(--heading-color);    
+}
+
+
+.publication-details{
+  margin-bottom: 0.5%;
+  color: var(--text-color);
+  font-style: italic;
+}
+
+.publication-icon-para{
+  
+  text-align: center;
+}
+
+.publication-icon-para a{
+  color: var(--text-color);
+}
+
+.publication-abstract-text{
+  margin: 0;
+  color: var(--heading-color);
+}
+
+.publication-abstract{
+  border-left: 2px solid var(--text-color);
+  margin: 0 10px 10px;
+  padding: 0 10px;
+}
+
+.publication-cite{
+  background-color: #f5ebd5;
+  color: black;
+  padding: 0.5%;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.publication-cite-text{
+  color: var(--heading-color);
+}
+
+.publication-hr{
+  border: 1px solid white;
+  margin: 0%;
+  padding: 0%;
+}
+
+/* Contact */
+.contact-header{
+  margin: 2% 0px 0px;
+  text-align: center;
+  color: var(--heading-color);
+  font-family: 'Bangers';
+}
+
+.contact-text{
+  margin: 2% 0px;
+  text-align: center;
+  color: var(--heading-color);
+  font-family: 'Copperplate';
+}
+
+.contact-leftDiv{
+  padding: 5% 2%;
+  border: 1px solid var(--heading-color);
+  border-radius: 10px;
+}
+
+.contact-leftDiv a{
+  color: var(--text-color);
+}
+
+.contact-rightDiv{
+  padding: 2% 2% 0%;
+  /* border: 1px solid var(--heading-color); */
+  /* border-radius: 10px; */
+}
+
+.contact-rightDiv form input,textarea{
+  margin-bottom: 2%;
+}
+
+.contact-button{
+  margin-right: 2%;
+}
+
+.contact-input-verify{
+  width: 10%;
+}
+
+
