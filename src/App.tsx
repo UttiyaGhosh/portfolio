@@ -5,6 +5,24 @@ import './App.css'
 
 function App() {
 
+  const Home = () => (
+    <div>
+      <h2>Home</h2>
+    </div>
+  );
+  
+  const About = () => (
+    <div>
+      <h2>About</h2>
+    </div>
+  );
+  
+  const Contact = () => (
+    <div>
+      <h2>Contact</h2>
+    </div>
+  );
+  
   return (
     <BrowserRouter>
       <Routes>
