@@ -1,6 +1,4 @@
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
-import Home from "./pages/Home"
-import Contact from "./pages/Contact"
 import './App.css'
 
 function App() {
@@ -11,18 +9,12 @@ function App() {
     </div>
   );
   
-  const About = () => (
-    <div>
-      <h2>About</h2>
-    </div>
-  );
-  
   const Contact = () => (
     <div>
       <h2>Contact</h2>
     </div>
   );
-  
+
   return (
     <BrowserRouter>
       <Routes>
