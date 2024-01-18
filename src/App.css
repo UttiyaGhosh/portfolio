@@ -34,44 +34,7 @@
   font-size: 1.5vw;
 }
 
-/* Home */
-.home-container{
-  margin-top: 10%;
-}
 
-.home-heading{
-  color: var(--heading-color);
-  margin-bottom: 5%;
-}
-
-.home-about{
-  color: var(--text-color);
-  margin-bottom: 5%;
-}
-
-.anime-img{
-  width: 80%;
-}
-
-.icon-para{
-  width:50%
-}
-
-.icon-linkedIn{
-  color: #0073B1;
-}
-
-.icon-github{
-  color: white;
-}
-
-.icon-gmail{
-  color: #0073B1;
-}
-
-.icon-google-scholar{
-  height: 32px;
-}
 
 /* Publications */
 
