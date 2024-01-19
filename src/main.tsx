@@ -10,15 +10,15 @@ import App from './App.tsx'
 
 const router = createBrowserRouter([
   {
-    path: "/vite-react-router/",
+    path: "/",
     element: <App />,
     children: [
       {
-        path: "/vite-react-router/",
+        path: "/",
         element: <Home />,
       },
       {
-        path: "/vite-react-router/contact",
+        path: "/contact",
         element: <Contact />,
       },
     ],
@@ -27,6 +27,6 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>,
 )
